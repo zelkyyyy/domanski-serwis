@@ -17,10 +17,14 @@ const Main = () => {
         
       />
       {/* <div className="absolute inset-0 w-full h-full bg-black opacity-60 flex items-center justify-center" /> */}
-      <div className="relative z-10 text-neutral-100 flex flex-col justify-center items-center gap-2 my-auto">
-        <Image className='w-[90%] max-w-[800px] h-auto select-none shadow-black brightness-80' src="/images/logo-white1.png" alt="Domańscy Autoserwis" width={800} height={300} draggable={false} />
-        <span className={`block bg-gradient-to-br from-neutral-200 from-30% to-neutral-400/70 text-transparent bg-clip-text text-4xl md:text-5xl font-bold font-sans tracking-wide`}>Domańscy Autoserwis</span>
-        <span className={`text-lg md:text-2xl text-neutral-300 font-sans mb-6`}>Eksperci w dziedzinie mechaniki samochodowej</span>
+      <div className="relative z-10 flex w-[90%] max-w-[800px] flex-col items-center justify-center gap-2 my-auto text-neutral-100">
+        <Image className='w-full h-auto select-none shadow-black brightness-80' src="/images/logo-white1.png" alt="Domańscy Autoserwis" width={800} height={300} draggable={false} />
+        <span className="block w-full bg-linear-to-br from-neutral-200 from-30% to-neutral-400/70 bg-clip-text text-center text-[clamp(2rem,5vw,3.75rem)] font-bold font-sans leading-none tracking-wide text-transparent">
+          Domańscy Autoserwis
+        </span>
+        <span className="mb-6 w-full text-center font-sans text-[clamp(1rem,2vw,1.5rem)] text-neutral-300">
+          Eksperci w dziedzinie mechaniki samochodowej
+        </span>
         <div className='flex gap-4 md:gap-12 flex-row flex-wrap items-center justify-center px-4'>
             <a href="tel:" className={`text-xl text-white font-bold font-sans px-6 py-4 rounded-lg bg-red-600 hover:shadow-[0_0_40px_var(--color-red-600)] shadow-red-500/60 duration-300 flex items-center gap-2 `}><BsFillTelephoneFill />Robert</a>
             <a href="tel:" className={`text-xl text-white font-bold font-sans px-6 py-4 rounded-lg bg-red-600 hover:shadow-[0_0_40px_var(--color-red-600)] shadow-red-500/60 duration-300 flex items-center gap-2 `}><BsFillTelephoneFill />Mieczysław</a>
