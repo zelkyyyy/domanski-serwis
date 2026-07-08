@@ -1,18 +1,12 @@
 import React from 'react'
-import { Montserrat } from "next/font/google";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Image from 'next/image';
 import { FaLocationDot } from "react-icons/fa6";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"], // jakie chcesz
-  variable: "--font-montserrat", // opcjonalnie jeśli chcesz jako CSS variable
-});
 
 
 const Main = () => {
   return (
-    <div className="relative z-0 w-full h-screen flex items-center justify-center shadow-[0_30px_50px_rgba(0,0,0,1)]">   {/* <- KONTEKST */}
+    <div id="home" className="relative z-0 w-full h-screen flex items-center justify-center shadow-[0_30px_50px_rgba(0,0,0,1)]">   {/* <- KONTEKST */}
       <Image
         className="absolute select-none  blur-sm inset-0 w-full h-full object-cover grayscale-100 brightness-50"
         alt="Background"

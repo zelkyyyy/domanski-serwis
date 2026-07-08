@@ -2,7 +2,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 
 export default function Footer() {
     return (
-        <footer className="bg-zinc-950 text-neutral-300 p-18 w-full flex flex-col md:flex-row justify-around items-top gap-12 ">
+        <footer id="kontakt" className="bg-zinc-950 text-neutral-300 p-18 w-full flex flex-col md:flex-row justify-around items-top gap-12 ">
             <div>
                 <h3 className={`text-2xl font-bold mb-2 md:mb-4 text-neutral-100`}>Godziny otwarcia</h3>
                 <p className="flex justify-between"><span className="mr-8">Poniedziałek - Piątek:</span> 8:00 - 16:00</p>

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import NavbarLink from './NavbarLink'
 import { BsTelephone} from "react-icons/bs";
 import { useEffect, useState } from 'react';
+import HamburgerMenu from './HamburgerMenu'
 
 
 
@@ -20,10 +21,10 @@ const Navbar = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-   const height = atTop ? 96 : 64;
   return (
+    <>
     <div className={`hidden lg:flex fixed  z-80 backdrop-blur-md items-center justify-between py-4 px-24 bg-[##121212] w-full mx-auto shadow-xl shadow-black/25 border-b border-neutral-200/30 ${atTop ? 'h-32' : 'h-20'} transition-all duration-500`}>
-      <Image className={`hover:-translate-x-96 duration-500 delay-1000 w-auto h-[100%]`} alt='logo domanski serwis' src="/images/logo.png" width={400} height={200} draggable={false} />
+      <Image className={`hover:-translate-x-96 duration-500 delay-1000 w-auto h-full`} alt='logo domanski serwis' src="/images/logo.png" width={400} height={200} draggable={false} />
       <div className="space-x-6">
                     <NavbarLink href="#" name="Strona główna" />
                     <NavbarLink href="#o-nas" name="O nas" />
@@ -36,6 +37,10 @@ const Navbar = () => {
         </a>
 
     </div>
+    <div className="fixed left-0 top-0 z-80 flex w-full items-center justify-end p-4 lg:hidden">
+      <HamburgerMenu />
+    </div>
+    </>
   )
 }
 
