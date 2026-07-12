@@ -6,10 +6,10 @@ const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const links = [
-    { href: '#', label: 'Strona główna' },
-    { href: '#o-nas', label: 'O nas' },
-    { href: '#usługi', label: 'Usługi' },
-    { href: '#kontakt', label: 'Kontakt' },
+    { href: '/', label: 'Strona główna' },
+    { href: '/aboutUs', label: 'O nas' },
+    { href: '/services', label: 'Usługi' },
+    { href: '/contact', label: 'Kontakt' },
   ]
 
   return (
