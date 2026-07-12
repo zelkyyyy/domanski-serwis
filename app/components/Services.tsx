@@ -11,6 +11,7 @@ type ServiceItem = {
 const Services = () => {
   const [services, setServices] = useState<ServiceItem[]>([])
   const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [query, setQuery] = useState('')
 
   useEffect(() => {
     const loadServices = async () => {
@@ -25,12 +26,46 @@ const Services = () => {
     })
   }, [])
 
+  const filteredServices = services.filter((service) => {
+    const searchTerm = query.trim().toLowerCase()
+
+    if (!searchTerm) {
+      return true
+    }
+
+    return (
+      service.name.toLowerCase().includes(searchTerm) ||
+      service.description.toLowerCase().includes(searchTerm)
+    )
+  })
+
   return (
     <div id="usługi" className="relative flex w-full flex-col items-center justify-center my-24 min-h-[500px]">
+
       <h2 className="mb-16 text-5xl font-bold tracking-wide text-neutral-200 font-sans">Nasze Usługi</h2>
 
+      <div className="mb-8 w-full max-w-4xl px-4 md:px-8">
+        <input
+          id="services-search"
+          type="search"
+          value={query}
+          onChange={(event) => {
+            setQuery(event.target.value)
+            setOpenIndex(null)
+          }}
+          placeholder="Wyszukaj usługę..."
+          className="w-full rounded-2xl border border-neutral-200/10 bg-neutral-950/80 px-5 py-4 text-neutral-100 outline-none transition placeholder:text-neutral-500 focus:border-red-500/50 focus:ring-2 focus:ring-red-500/20"
+        />
+      </div>
+
       <div className="flex w-full max-w-4xl flex-col gap-4 px-4 md:px-8">
-        {services.map((service, index) => {
+        {filteredServices.length === 0 ? (
+          <div className="rounded-2xl border border-neutral-200/10 bg-neutral-950/60 px-5 py-6 text-neutral-300 shadow-lg shadow-black/30">
+            Nie znaleziono usług pasujących do wyszukiwania.
+          </div>
+        ) : null}
+
+        {filteredServices.map((service, index) => {
           const isOpen = openIndex === index
 
           return (

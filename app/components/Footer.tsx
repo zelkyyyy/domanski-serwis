@@ -25,7 +25,7 @@ export default function Footer() {
         }
     ]
     return (
-        <footer id="kontakt" className="bg-zinc-950 text-neutral-300 p-18 w-full flex flex-col md:flex-row justify-around items-top gap-12 border-t border-neutral-200/20">
+        <footer id="kontakt" className="bg-zinc-950 text-neutral-300 p-10 w-full flex flex-col md:flex-row justify-around items-top gap-12 border-t border-neutral-200/20">
             <div>
                 <h3 className={`text-2xl font-bold mb-2 md:mb-4 text-neutral-100`}>Godziny otwarcia</h3>
                 <p className="flex justify-between"><span className="mr-8">Poniedziałek - Piątek:</span> 8:00 - 16:00</p>
