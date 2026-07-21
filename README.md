@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Domański Serwis
 
-## Getting Started
+Nowoczesny landing page dla warsztatu samochodowego stworzony w Next.js.
+Projekt zawiera dynamiczne komponenty React, filtrowanie usług oraz własne endpointy API stworzone za pomocą Next.js Route Handlers.
 
-First, run the development server:
+## Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Link do działającej aplikacji:
+https://domanski-serwis.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologie
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- REST API (Next.js Route Handlers)
+- Git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Funkcjonalności
 
-## Learn More
+- Responsywny interfejs użytkownika
+- Dynamiczne komponenty React
+- Wyświetlanie listy usług
+- Filtrowanie usług
+- Pobieranie danych przez własne API
+- Integracja frontend-backend
 
-To learn more about Next.js, take a look at the following resources:
+## API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Projekt posiada własne endpointy API:
+https://domanski-serwis.vercel.app/api/services
+https://domanski-serwis.vercel.app/api/telephones
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Pobieranie usług
