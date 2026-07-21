@@ -29,7 +29,10 @@ https://domanski-serwis.vercel.app
 ## API
 
 Projekt posiada własne endpointy API:
+
+### Pobieranie usług:
 https://domanski-serwis.vercel.app/api/services
+
+### Pobieranie kontaktów telefonicznych:
 https://domanski-serwis.vercel.app/api/telephones
 
-### Pobieranie usług
