@@ -3,20 +3,20 @@
 import { useEffect, useState } from 'react'
 import { IoAdd } from "react-icons/io5";
 
-type ServiceItem = {
+interface Service {
   name: string
   description: string
 }
 
 const Services = () => {
-  const [services, setServices] = useState<ServiceItem[]>([])
+  const [services, setServices] = useState<Service[]>([])
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const [query, setQuery] = useState('')
 
   useEffect(() => {
     const loadServices = async () => {
-      const response = await fetch('/data/services.json')
-      const data = (await response.json()) as ServiceItem[]
+      const response = await fetch('/api/services')
+      const data: Service[] = (await response.json())
 
       setServices(data)
     }
@@ -26,7 +26,7 @@ const Services = () => {
     })
   }, [])
 
-  const filteredServices = services.filter((service) => {
+  const filteredServices = services.filter((service: Service) => {
     const searchTerm = query.trim().toLowerCase()
 
     if (!searchTerm) {

@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Service = (props: {
+interface ServiceProps {
   title: string;
   icon: React.ComponentType<{ className?: string }>;
-}) => {
+}
+
+const Service = (props: ServiceProps) => {
     const Icon = props.icon;
     
   return (
