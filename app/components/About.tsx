@@ -28,7 +28,10 @@ const About = () => {
                 <p className='text-lg text-neutral-300 text-left max-w-[60ch] h-fit border p-8 rounded-xl border-red-500/40'>
           Jesteśmy rodzinnym serwisem z Łukowa, który od <b>1956</b> roku łączy pasję do <b>motoryzacji</b> z najwyższymi standardami obsługi. Nasza historia to droga od warsztatu ślusarskiego Stanisława Domańskiego do nowoczesnego centrum mechatroniki pojazdowej.
         </p>
-                <Image className={`overflow-hidden border border-white/10 hover:border-red-500/50 transition-all duration-500 rounded-xl w-full max-w-[600px] brightness-90`} src="/images/workshop.jpg" alt="O nas" width={400} height={300} />
+        <div className='flex rounded-xl items-center justify-center w-full h-full overflow-hidden border border-white/10'>
+            <Image className={` hover:scale-175 duration-750 transition-all duration-500  w-full max-w-[600px] brightness-90`} src="/images/workshop.jpg" alt="O nas" width={400} height={300} />
+
+        </div>
 
         </div>
         </div>
