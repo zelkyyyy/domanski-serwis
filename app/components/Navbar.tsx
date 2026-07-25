@@ -29,9 +29,9 @@ const Navbar = () => {
       <Image className={`hover:-translate-x-96 duration-500 delay-1000 w-auto h-full`} alt='logo domanski serwis' src="/images/logo.png" width={400} height={200} draggable={false} />
       <div className="space-x-6">
                     <NavbarLink href="/" name="Strona główna" />
-                    <NavbarLink href="/aboutUs" name="O nas" />
-                    <NavbarLink href="/services" name="Usługi" />
-                    <NavbarLink href="/contact" name="Kontakt" />
+                    <NavbarLink href="/o-nas" name="O nas" />
+                    <NavbarLink href="/uslugi" name="Usługi" />
+                    <NavbarLink href="/kontakt" name="Kontakt" />
       </div>
       <a href="tel:" className={`hover:bg-neutral-100 bg-red-600 text-neutral-100 rounded-lg ${atTop ? "h-16" : "h-12"} px-6 py-3 text-xl font-bold hover:text-red-600 duration-300 flex items-center gap-2 hover:shadow-[0_0_40px_var(--color-neutral-200)] hover:shadow-neutral-200/50`}>
         <BsTelephone className='font-extrabold text-lg' />
