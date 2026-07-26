@@ -1,9 +1,11 @@
 "use client"
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { IoAdd } from "react-icons/io5";
 
 interface Service {
+  slug: string
   name: string
   description: string
 }
@@ -73,16 +75,22 @@ const Services = () => {
               key={`${service.name}-${index}`}
               className="overflow-hidden rounded-2xl border border-neutral-200/10 bg-neutral-950/60 shadow-lg shadow-black/30"
             >
-              <button
-                type="button"
-                onClick={() => setOpenIndex(isOpen ? null : index)}
-                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-white/5"
-                aria-expanded={isOpen}
-                aria-controls={`service-panel-${index}`}
-              >
-                <span className="text-lg font-semibold text-neutral-100 md:text-xl">{service.name}</span>
-                <IoAdd className={`h-5 w-5 text-red-500 transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`} />
-              </button>
+              <div className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-white/5">
+                <Link href={`/uslugi/${service.slug}`} className="text-lg  font-semibold text-neutral-100 md:text-xl hover:text-red-500 transition-colors duration-500">
+                  {service.name}
+                </Link>
+                <div className={`w-0 h-[1px] bg-red-500 transition-transform duration-300 `}></div>
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-white/10"
+                  aria-expanded={isOpen}
+                  aria-controls={`service-panel-${index}`}
+                  aria-label={isOpen ? `Zwiń ${service.name}` : `Rozwiń ${service.name}`}
+                >
+                  <IoAdd className={`h-5 w-5 text-red-500 transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`} />
+                </button>
+              </div>
 
               <div
                 id={`service-panel-${index}`}

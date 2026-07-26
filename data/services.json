@@ -1,93 +1,116 @@
 [
   {
+    "slug": "diagnostyka-komputerowa",
     "name": "Diagnostyka komputerowa",
     "description": "Kompleksowa diagnostyka elektroniki pojazdu, odczyt i kasowanie błędów, analiza parametrów pracy silnika oraz systemów ABS, ESP, AIRBAG i innych."
   },
   {
+    "slug": "naprawa-silnikow",
     "name": "Naprawa silników",
     "description": "Diagnostyka, naprawy główne i bieżące silników benzynowych oraz wysokoprężnych."
   },
   {
+    "slug": "naprawa-skrzyn-biegow",
     "name": "Naprawa skrzyń biegów",
     "description": "Diagnostyka, naprawa i regeneracja manualnych oraz automatycznych skrzyń biegów."
   },
   {
+    "slug": "dynamiczna-wymiana-oleju-atf",
     "name": "Dynamiczna wymiana oleju ATF",
     "description": "Profesjonalna dynamiczna wymiana oleju w automatycznych skrzyniach biegów wraz z kontrolą stanu układu."
   },
   {
+    "slug": "wymiana-sprzegla",
     "name": "Wymiana sprzęgła",
     "description": "Kompleksowa wymiana sprzęgła wraz z oceną stanu elementów współpracujących."
   },
   {
+    "slug": "wymiana-kola-dwumasowego",
     "name": "Wymiana koła dwumasowego",
     "description": "Wymiana zużytych kół dwumasowych w celu przywrócenia prawidłowej pracy układu napędowego."
   },
   {
+    "slug": "uklad-napedowy",
     "name": "Układ napędowy",
     "description": "Diagnostyka i naprawa elementów układu przeniesienia napędu."
   },
   {
+    "slug": "uklad-kierowniczy",
     "name": "Układ kierowniczy",
     "description": "Naprawa i serwis elementów układu kierowniczego odpowiedzialnych za bezpieczeństwo prowadzenia pojazdu."
   },
   {
+    "slug": "uklady-zawieszenia",
     "name": "Układy zawieszenia",
     "description": "Diagnostyka oraz wymiana amortyzatorów, wahaczy, tulei i pozostałych elementów zawieszenia."
   },
   {
+    "slug": "uklady-hamulcowe",
     "name": "Układy hamulcowe",
     "description": "Serwis i naprawa układów hamulcowych, wymiana tarcz, klocków, zacisków oraz płynu hamulcowego."
   },
   {
+    "slug": "uklady-wydechowe-i-katalizatory",
     "name": "Układy wydechowe i katalizatory",
     "description": "Naprawa, wymiana i diagnostyka układów wydechowych, tłumików oraz katalizatorów."
   },
   {
+    "slug": "regeneracja-filtrow-dpf-fap",
     "name": "Regeneracja filtrów DPF/FAP",
     "description": "Diagnostyka, czyszczenie i regeneracja filtrów cząstek stałych DPF oraz FAP."
   },
   {
+    "slug": "serwis-klimatyzacji",
     "name": "Serwis klimatyzacji",
     "description": "Napełnianie, odgrzybianie, diagnostyka szczelności oraz naprawa układów klimatyzacji."
   },
   {
+    "slug": "chip-tuning",
     "name": "Chip tuning",
     "description": "Bezpieczna modyfikacja oprogramowania sterownika silnika w celu zwiększenia osiągów i poprawy charakterystyki pracy."
   },
   {
+    "slug": "kodowanie-sterownikow",
     "name": "Kodowanie sterowników",
     "description": "Programowanie i konfiguracja sterowników elektronicznych po naprawach lub wymianie podzespołów."
   },
   {
+    "slug": "adaptacja-modulow",
     "name": "Adaptacja modułów",
     "description": "Adaptacja i konfiguracja nowych lub używanych modułów elektronicznych pojazdu."
   },
   {
+    "slug": "kalibracja-radarow-i-kamer",
     "name": "Kalibracja radarów i kamer",
     "description": "Kalibracja systemów ADAS, radarów oraz kamer wspomagających kierowcę po naprawach lub wymianie szyb."
   },
   {
+    "slug": "uklady-zasilania-paliwem",
     "name": "Układy zasilania paliwem",
     "description": "Diagnostyka i naprawa układów paliwowych w silnikach benzynowych i diesla."
   },
   {
+    "slug": "pojazdy-hybrydowe",
     "name": "Pojazdy hybrydowe",
     "description": "Serwis i diagnostyka samochodów hybrydowych."
   },
   {
+    "slug": "przeglady-okresowe",
     "name": "Przeglądy okresowe",
     "description": "Regularne przeglądy eksploatacyjne zgodne z zaleceniami producentów pojazdów."
   },
   {
+    "slug": "montaz-hakow-holowniczych",
     "name": "Montaż haków holowniczych",
     "description": "Profesjonalny montaż haków holowniczych wraz z instalacją elektryczną."
   },
   {
+    "slug": "montaz-swiatel-led-i-swiatel-do-jazdy-dziennej",
     "name": "Montaż świateł LED i świateł do jazdy dziennej",
     "description": "Instalacja oświetlenia LED oraz świateł DRL zgodnie z obowiązującymi przepisami."
   },
   {
+    "slug": "wykrecanie-swiec-zarowych",
     "name": "Wykręcanie świec żarowych",
     "description": "Bezpieczne usuwanie zapieczonych świec żarowych bez konieczności demontażu głowicy."
   }
