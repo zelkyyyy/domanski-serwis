@@ -1,6 +1,6 @@
 import { Clock3, MapPinned, Phone } from "lucide-react";
 import phones from '@/data/telephones.json'
-import {formatPhones} from '@/utils/functions.ts'
+import {formatPhone} from '@/utils/functions'
 // const phones = [
 //   { name: "Robert", number: "123 456 789", href: "tel:+48123456789" },
 //   { name: "Mieczysław", number: "123 456 789", href: "tel:+48123456789" },
