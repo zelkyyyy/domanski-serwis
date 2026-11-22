@@ -42,7 +42,7 @@ const Navbar = () => {
           <NavbarLink href="/" name="Strona główna" />
           <NavbarLink href="/o-nas" name="O nas" />
           <NavbarLink href="/uslugi" name="Usługi" />
-          <NavbarLink href="/galeria" name="Galeria" />
+          {/* <NavbarLink href="/galeria" name="Galeria" /> */}
           <NavbarLink href="/kontakt" name="Kontakt" />
         </div>
         <a
